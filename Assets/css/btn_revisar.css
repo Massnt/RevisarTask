@@ -1,0 +1,42 @@
+.btn-revisar{
+    margin-top: 30px;
+    display: block;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.btn-revisar span{
+    position: relative;
+    z-index: 2;
+}
+
+.btn-revisar:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 8px;
+    background: #364046;
+    transition: all .35s;
+}
+
+.btn-revisar:hover{
+    color: #fff;
+}
+
+.btn-revisar:hover:after{
+    width: 100%;
+}
